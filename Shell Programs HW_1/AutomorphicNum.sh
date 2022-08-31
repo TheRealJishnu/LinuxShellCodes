@@ -13,7 +13,7 @@ do
 		break
 	fi
 	num=`expr $num / 10`
-	square=`expr $num / 10`
+	square=`expr $square / 10`
 done
 
 if [ $flag -eq 0 ]
