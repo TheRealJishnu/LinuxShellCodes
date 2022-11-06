@@ -1,3 +1,4 @@
+
 echo "Enter Length of The Array"
 read n
 echo "Enter The Array : "
@@ -8,12 +9,12 @@ do
         i=`expr $i + 1`
 done
 
+echo "Unsorted Array : ${arr[*]} "
 # SORT
-j=`expr $n - 1`
 for(( j = 0; j<n; j++ ))
 do
         low=${arr[$j]}
-        for(( k=1; k<n; k++)) #FIND THE LOWEST ELEMENT
+        for(( k=j+1; k<n; k++)) #FIND THE LOWEST ELEMENT
         do
                 if [ $low -gt ${arr[$k]} ]
                 then
@@ -23,15 +24,13 @@ do
         done
         
         
-
         #Swap low and First Element
-        temp=${arr[$k]}
-        arr[$k]=${arr[$m]}
-        arr[$m]=$temp
+        if [ $low -lt ${arr[$j]} ]
+        then
+		temp=${arr[$j]}
+		arr[$j]=${arr[$m]}
+		arr[$m]=$temp
+	fi
 done
 
-echo "Sorted Array : "
-for(( i=0; i<n; i++))
-do
-        echo ${arr[$i]} " "
-done
+echo "Sorted Array : ${arr[*]} "
