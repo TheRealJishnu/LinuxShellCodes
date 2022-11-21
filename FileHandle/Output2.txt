@@ -50,3 +50,16 @@ Enter a word :
 jishnu
 hi jishnu.
 hello jishnu.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+SentenceNotInWord
+
+wireless-wire@wirelesswire-VirtualBox:~/Documents/LinuxShellCodes-main/FileHandle$ bash SentenceNotWord.sh 
+Enter a File name: 
+test2.txt
+“Enter the word:”
+jishnu
+'jishnu' is Not Present at These Line : 
+hi others.
