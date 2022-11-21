@@ -1,0 +1,10 @@
+wireless-wire@wirelesswire-VirtualBox:~/Documents/LinuxShellCodes-main/RevCount$ bash RevStr.sh dark
+Reversed string is:
+krad
+
+
+------------------------------------
+
+wireless-wire@wirelesswire-VirtualBox:~/Documents/LinuxShellCodes-main/RevCount$ bash VowlConso.sh consonant
+The number of vowels is 3
+The number of consonants is 6
